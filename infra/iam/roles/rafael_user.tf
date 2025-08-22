@@ -7,7 +7,7 @@ resource "aws_iam_user" "primeiro_usuario_rafael" {
 }
 
 resource "aws_iam_policy" "primeiro_usuario_rafael_policy" {
-  name   = "primeiro-usuario-policy"
+  name   = "rafael-policy"
   policy = file("${path.module}/../policies/terraform_deploy_policy.json")
 }
 
