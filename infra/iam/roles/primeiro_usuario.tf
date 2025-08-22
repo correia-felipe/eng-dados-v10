@@ -12,7 +12,7 @@ resource "aws_iam_policy" "primeiro_usuario_policy" {
 }
 
 resource "aws_iam_user_policy_attachment" "github_actions_primeiro_usuario_attach" {
-  user       = aws_iam_user.primeiro_usuario_policy.name
+  user       = aws_iam_user.primeiro_usuario.name
   policy_arn = aws_iam_policy.primeiro_usuario_policy.arn
 }
 
