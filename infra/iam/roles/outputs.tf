@@ -4,5 +4,4 @@ output "github_actions_user_name" {
 
 output "github_actions_access_key_id" {
   value     = aws_iam_access_key.github_actions_key.id
-  sensitive = true
 }
